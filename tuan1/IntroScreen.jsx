@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import { View, Text } from 'react-native';
+import React, {useEffect} from 'react';
+import {View, Text} from 'react-native';
 
-const IntroScreen = ({ navigation }) => {
+const IntroScreen = ({navigation}) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigation.navigate('IndexScreen');
@@ -11,14 +11,22 @@ const IntroScreen = ({ navigation }) => {
   }, [navigation]);
 
   return (
-    <View>
-    <Text>Giới thiệu thành viên</Text>
-    <Text>Hoàng Nhất Vũ – 20110751</Text>
-    <Text>Lại Văn Quý – 20110708</Text>
-    <Text>Lê Đình Bảo – 20110613</Text>
-  </View>
+    <View style={{alignItems: "center", flex: 1}}>
+      <Text
+        style={{
+          fontSize: 24,
+          fontWeight: '600',
+          paddingVertical: 20,
+        }}>
+        Giới thiệu thành viên
+      </Text>
+      <View>
+        <Text>Hoàng Nhất Vũ – 20110751</Text>
+        <Text>Lại Văn Quý – 20110708</Text>
+        <Text>Lê Đình Bảo – 20110613</Text>
+      </View>
+    </View>
   );
 };
 
 export default IntroScreen;
-

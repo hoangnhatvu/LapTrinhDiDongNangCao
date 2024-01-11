@@ -10,7 +10,7 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator headerMode="none">
         <Stack.Screen name="IntroScreen" component={IntroScreen} />
         <Stack.Screen name="IndexScreen" component={IndexScreen} />
       </Stack.Navigator>
