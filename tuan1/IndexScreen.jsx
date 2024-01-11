@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const HomeScreen = () => {
+const IndexScreen = () => {
   return (
     <View>
-      <Text>Đây là trang chủ</Text>
+      <Text>Trang chủ</Text>
     </View>
   );
 };
 
-export default HomeScreen;
+export default IndexScreen;
